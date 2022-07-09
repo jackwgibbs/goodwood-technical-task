@@ -8,3 +8,4 @@ To run the platform, open index.html. Note, that due to calls to the wwww.goodwo
 Create a basic clone of the [Goodwood Road and Racing](https://goodwood.com/grr) platform using the Goodwood API. 
 
 ## Task 2:
+Do Conversion Rate Optimisation (CRO) with a given hypothesis, affecting the filter of the Qatar Goodwood Festival webpage. Replacing dropdown menu with radio buttons. 
