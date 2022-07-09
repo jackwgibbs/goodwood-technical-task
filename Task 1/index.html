@@ -2,26 +2,105 @@
 <html>
     <head>
         <title>Goodwood Road and Racing</title>
+        <link rel = "stylesheet" href ="style.css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abril+Fatface" />
+        <script type="text/javascript" src="script.js"></script>
     </head>
 
-    <body>
-        <script>
+    <body onload="loadPage()">
 
-       var url = "http://www.goodwood.com/v2/getpages/";
+        <div id ="menu">
+            <img src = "https://www.goodwood.com/resources/assets/dist/img/logo.png" style="position:absolute;">
+            <img src = "https://www.goodwood.com/resources/assets/dist/img/road-and-racing.png" style="position:absolute; top:50px;">
 
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", url, false);
+            <a class="pages" href="#home">Home</a>
+            <a class="pages" href="https://www.goodwood.com/grr/car-reviews/">Car Reviews</a>
+            <a class="pages" href="https://www.goodwood.com/grr/event-coverage/">Event Coverage</a>
+            <a class="pages" href="https://www.goodwood.com/grr/road/">Road</a>
+            <a class="pages" href="https://www.goodwood.com/grr/race/">Race</a>
+            <a class="pages" href="https://www.goodwood.com/grr/archive/">Archive</a>
+            <a class="pages" href="https://ticketing.goodwood.com/PagesPublic/UserControlled/UserDefined.aspx?_ga=2.258110730.1835082687.1657360138-317967710.1657360134&page=Motorsport-Events">Tickets</a>
 
-        xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            alert(xhr.status);
-            console.log(xhr.responseText);
-            alert(xhr.responseText);
+        </div>
 
-        }};
+        <div id ="filterbar">
+            <select name="filter" id="filter" onchange="filter();">
+                <option value="none">Filter Option</option>
+                <option value="articles">Article</option>
+                <option value="videos">Video</option>
+                <option value="gallery">Gallery</option>
+              </select>
+        </div>
 
-        xhr.send();
-       
-        </script>
+        <div id ="content">
+
+            <div id ="events">
+
+                <a href = "" id ="event1link">
+                    <div id = "event1" class="eventbox">
+                        <img src = "" id ="event1img" class="event_img">
+                        <h1 id="event1title" class="event_title">Title</h1>
+                        <p id="event1from" class="eventfrom"></p>
+                    </div>
+                </a>
+    
+                <a href = "" id ="event2link">
+                    <div id = "event2"class="eventbox">
+                        <img src = "" id ="event2img" class="event_img">
+                        <h1 id="event2title" class="event_title">Title</h1>
+                        <p id="event2from" class="eventfrom"></p>
+                    </div>
+                </a>
+    
+                <a href = "" id ="event3link">
+                    <div id = "event3" class="eventbox">
+                        <img src = "" id ="event3img" class="event_img">
+                        <h1 id="event3title" class="event_title">Title</h1>
+                        <p id="event3from" class="eventfrom"></p>
+                    </div>
+                </a>
+    
+                <a href = "" id ="event4link">
+                    <div id = "event4" class="eventbox">
+                        <img src = "" id ="event4img" class="event_img">
+                        <h1 id="event4title" class="event_title">Title</h1>
+                        <p id="event4from" class="eventfrom"></p>
+                    </div>
+                </a>
+    
+                <a href = "" id ="event5link">
+                    <div id = "event5" class="eventbox">
+                        <img src = "" id ="event5img" class="event_img">
+                        <h1 id="event5title" class="event_title">Title</h1>
+                        <p id="event5from" class="eventfrom">.</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div id ="articles">.
+
+                <a href = "" id ="article1link">
+                    <div id = "article1">
+                        <img src = "" id ="article1img" class="article_img">
+                        <h1 id="article1title" class="article_title">Title</h1>
+                    </div>
+                </a>
+
+                <a href = "" id ="article2link">
+                    <div id = "article2">
+                        <img src = "" id ="article2img" class="article_img">
+                        <h1 id="article2title" class="article_title">Title</h1>
+                    </div>
+                </a>
+        
+                <a href = "" id ="article3link">
+                    <div id = "article3">
+                        <img src = "" id ="article3img" class="article_img">
+                        <h1 id="article3title" class="article_title">Title</h1>
+                    </div>
+                </a>
+            </div>        
+        </div>
     </body>
 </html>
