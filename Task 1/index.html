@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Goodwood Road and Racing</title>
+    </head>
+
+    <body>
+        <script>
+
+       var url = "http://www.goodwood.com/v2/getpages/";
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, false);
+
+        xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            alert(xhr.status);
+            console.log(xhr.responseText);
+            alert(xhr.responseText);
+
+        }};
+
+        xhr.send();
+       
+        </script>
+    </body>
+</html>
