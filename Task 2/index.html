@@ -22,19 +22,10 @@
 
         </div>
 
-        <p>Choose from one of our perfect race day packages in the Gordon Enclosure, 
-            revel in the atmosphere of a shared experience in one of our Shared Bars or 
-            upgrade your Qatar Goodwood Festival experience with one of our exclusive Hospitality areas.</p>
-
-
         <div id = "pane">
-                <p>Filter by day</p>
+                <p>Select a day</p>
                 <form>
-                    <div class = "option" id = "mondaydiv" onclick = "radioFilter('monday')">
-                        <input type="radio" id="monday" name="day" value="monday" onclick="radioFilter('monday')" checked>
-                        <label for="html">Monday</label>
-                    </div><br>
-        
+
                     <div class = "option" id = "tuesdaydiv" onclick = "radioFilter('tuesday')">
                         <input type="radio" id="tuesday" name="day" value="tuesday" onclick="radioFilter('tuesday')">
                         <label for="tuesday">Tuesday</label>
@@ -60,10 +51,6 @@
                         <label for="saturday">Saturday</label>
                     </div><br>
         
-                    <div class = "option" id = "sundaydiv" onclick = "radioFilter('sunday')">
-                        <input type="radio" id="sunday" name="day" value="sunday" onclick="radioFilter('sunday')">
-                        <label for="sunday">Sunday</label>
-                    </div><br>
         
                     <div class = "option" id = "alldiv" onclick = "radioFilter('all')">
                         <input type="radio" id="all" name="day" value="all" onclick="radioFilter('all')">
@@ -74,32 +61,53 @@
         </div>
 
         <div id = "content">
-
+            <p id = "intro">Choose from one of our perfect race day packages in the Gordon Enclosure, 
+                revel in the atmosphere of a shared experience in one of our Shared Bars or 
+                upgrade your Qatar Goodwood Festival experience with one of our exclusive Hospitality areas.</p>
             
 
-
+            <div id = "cells">
             <div class = "cell">
-
+                <img src = "https://www.goodwood.com/globalassets/horseracing/racecourse/enclosures/lennox-enclosure-group-picnic.jpg?crop=(0,220,2449,1598)&width=570">
+                <h1 class="title">Lennox Enclosure</h1>
+                <p class = "desc">Family-friendly and a great value way to enjoy the Qatar Goodwood Festival.</p>
+                <button class ="book">Book Now</button>
             </div>
 
             <div class = "cell">
-                
+                <img src = "https://www.goodwood.com/globalassets/horseracing/2022/dress-code/group-of-ladies-at-qgf-goodwood-racecourse.jpg?crop=(171,205,2193,1343)">
+                <h1 class="title">Gordon Enclosure</h1>
+                <p class = "desc">The hub of race day entertainment with great views inside the Final Furlong.</p>
+                <button class ="book">Book Now</button>
             </div>
 
             <div class = "cell">
-                
+                <img src = "https://www.goodwood.com/globalassets/horseracing/2022/hospitality-pages/group-smiling-and-having-fun-sussex-roof-garden.jpg?crop=(0,194,2449,1572)">
+                <h1 class="title">Sussex Roof Garden Bar</h1>
+                <p class = "desc">A botanical private bar in the Gordon Enclosure with commanding views.</p>
+                <button class ="book">Book Now</button>
             </div>
 
             <div class = "cell">
-                
+                <img src = "https://www.goodwood.com/globalassets/horseracing/2022/hospitality-pages/secret-garden-table-with-food-qgf.jpg?crop=(0,94,2449,1472)">
+                <h1 class="title">The Secret Garden</h1>
+                <p class = "desc">A beautiful floral-filled space serving a delicious buffet-style menu.</p>
+                <button class ="book">Book Now</button>
             </div>
 
             <div class = "cell">
-                
+                <img src = "https://www.goodwood.com/globalassets/horseracing/2022/hospitality-pages/final-furlong-balcony-qgf.jpg?crop=(0,254,2449,1632)">
+                <h1 class="title">The Final Furlong</h1>
+                <p class = "desc">A relaxing base for the day with thrilling course-side views.</p>
+                <button class ="book">Book Now</button>
             </div>
 
             <div class = "cell">
-                
+                <img src = "https://www.goodwood.com/globalassets/horseracing/2022/hospitality-pages/charlton-hunt-ladies-on-balcony-horsewalk.jpg?crop=(0,127,2449,1505)">
+                <h1 class="title">Charlton Hunt</h1>
+                <p class = "desc">Entertaining space with far reaching views & serving fine cuisine.</p>
+                <button class ="book">Book Now</button>
+            </div>
             </div>
         </div>
     </body>
