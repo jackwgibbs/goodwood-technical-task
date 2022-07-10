@@ -33,22 +33,30 @@ a:hover{
 
 .cell{
     width:30%;
-    height:50%;
+    height:40%;
     border-style: solid;
     position:relative;
     float:left;
-    top:50px;
+
     margin:15px;
+
 }
 
 #content{
     position:absolute;
-    width:85%;
-    left:7.5%;
+    width:75%;
+    left:20%;
     height:100%;
-    top:200px;
+    top:150px;
 }
 
+#pane{
+    position:absolute;
+    width:13%;
+    height:100%;
+    top:150px;
+    left:5%;
+}
 
 input[type='radio'] { 
 
@@ -64,10 +72,21 @@ label{
 }
 
 input[type='radio']:checked {
-    background: #333;
+    background:  #a4e7d4;
 }
 
 input[type='radio']:hover {
     transform: scale(1.4);
 }
 
+.option{
+    border-radius: 25px;
+    border: 2px solid #a4e7d4;
+    padding: 10px;
+}
+
+.option:hover{
+    transform: scale(1.02);
+    border: 2px solid  #a4e7d4;
+
+}

@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel = "stylesheet" href = "style.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="script.js"></script>
         <title>Qatar Goodwood Festival</title>
     </head>
@@ -21,35 +22,60 @@
 
         </div>
 
+        <p>Choose from one of our perfect race day packages in the Gordon Enclosure, 
+            revel in the atmosphere of a shared experience in one of our Shared Bars or 
+            upgrade your Qatar Goodwood Festival experience with one of our exclusive Hospitality areas.</p>
+
+
+        <div id = "pane">
+                <p>Filter by day</p>
+                <form>
+                    <div class = "option" id = "mondaydiv" onclick = "radioFilter('monday')">
+                        <input type="radio" id="monday" name="day" value="monday" onclick="radioFilter('monday')" checked>
+                        <label for="html">Monday</label>
+                    </div><br>
+        
+                    <div class = "option" id = "tuesdaydiv" onclick = "radioFilter('tuesday')">
+                        <input type="radio" id="tuesday" name="day" value="tuesday" onclick="radioFilter('tuesday')">
+                        <label for="tuesday">Tuesday</label>
+                    </div><br>
+        
+                    <div class = "option" id = "wednesdaydiv" onclick = "radioFilter('wednesday')">
+                        <input type="radio" id="wednesday" name="day" value="wednesday" onclick="radioFilter('wednesday')">
+                        <label for="wednesday">Wednesday</label>
+                    </div><br>
+        
+                    <div class = "option" id = "thursdaydiv" onclick = "radioFilter('thursday')">
+                        <input type="radio" id="thursday" name="day" value="thursday" onclick="radioFilter('thursday')">
+                        <label for="thursday">Thursday</label>
+                    </div><br>
+        
+                    <div class = "option" id = "fridaydiv" onclick = "radioFilter('friday')">
+                        <input type="radio" id="friday" name="day" value="friday" onclick="radioFilter('friday')">
+                        <label for="friday">Friday</label>
+                    </div><br>
+        
+                    <div class = "option" id = "saturdaydiv" onclick = "radioFilter('saturday')">
+                        <input type="radio" id="saturday" name="day" value="saturday" onclick="radioFilter('saturday')">
+                        <label for="saturday">Saturday</label>
+                    </div><br>
+        
+                    <div class = "option" id = "sundaydiv" onclick = "radioFilter('sunday')">
+                        <input type="radio" id="sunday" name="day" value="sunday" onclick="radioFilter('sunday')">
+                        <label for="sunday">Sunday</label>
+                    </div><br>
+        
+                    <div class = "option" id = "alldiv" onclick = "radioFilter('all')">
+                        <input type="radio" id="all" name="day" value="all" onclick="radioFilter('all')">
+                        <label for="html">Show All</label>
+                    </div>
+    
+                </form>
+        </div>
+
         <div id = "content">
 
-            <form>
-                
-            <input type="radio" id="monday" name="day" value="monday" onclick="filter('Monday')">
-            <label for="html">Monday</label>
-
-            <input type="radio" id="tuesday" name="day" value="tuesday" onclick="filter('Tuesday')">
-            <label for="tuesday">Tuesday</label>
-
-            <input type="radio" id="wednesday" name="day" value="wednesday" onclick="filter('Wednesday')">
-            <label for="wednesday">Wednesday</label>
-
-            <input type="radio" id="thursday" name="day" value="thursday" onclick="filter('Thursday')">
-            <label for="thursday">Thursday</label>
-
-            <input type="radio" id="friday" name="day" value="friday" onclick="filter('Friday')">
-            <label for="friday">Friday</label>
-
-            <input type="radio" id="saturday" name="day" value="saturday" onclick="filter('Saturday')">
-            <label for="saturday">Saturday</label>
-
-            <input type="radio" id="sunday" name="day" value="sunday" onclick="filter('Sunday')">
-            <label for="sunday">Sunday</label>
-
-            <input type="radio" id="all" name="day" value="all" onclick="filter('Monday')">
-            <label for="html">Show All</label>
-
-            </form>
+            
 
 
             <div class = "cell">
@@ -57,7 +83,7 @@
             </div>
 
             <div class = "cell">
-                .
+                
             </div>
 
             <div class = "cell">
