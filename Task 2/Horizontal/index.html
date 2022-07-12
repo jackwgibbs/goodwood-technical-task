@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "style.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="script.js"></script>
+        <title>Qatar Goodwood Festival</title>
+        <link rel="icon" type="image/x-icon" href="https://www.goodwood.com/Resources/favicons/dotcom/apple-touch-icon-180x180.png">
+    </head>
+
+    <body  onload = "radioFilter('tuesday')">
+        <div id ="menu">
+            <img src = "https://www.goodwood.com/resources/assets/dist/img/logo.png" style="position:absolute;">
+            <img src = "https://www.goodwood.com/resources/assets/dist/img/road-and-racing.png" style="position:absolute; top:50px;">
+
+            <a class="pages" href="#home">Home</a>
+            <a class="pages" href="https://www.goodwood.com/grr/car-reviews/">Car Reviews</a>
+            <a class="pages" href="https://www.goodwood.com/grr/event-coverage/">Event Coverage</a>
+            <a class="pages" href="https://www.goodwood.com/grr/road/">Road</a>
+            <a class="pages" href="https://www.goodwood.com/grr/race/">Race</a>
+            <a class="pages" href="https://www.goodwood.com/grr/archive/">Archive</a>
+            <a class="pages" href="https://ticketing.goodwood.com/PagesPublic/UserControlled/UserDefined.aspx?_ga=2.258110730.1835082687.1657360138-317967710.1657360134&page=Motorsport-Events">Tickets</a>
+
+        </div>
+
+        <p id = "intro">Choose from one of our perfect race day packages in the Gordon Enclosure, 
+            revel in the atmosphere of a shared experience in one of our Shared Bars or 
+            upgrade your Qatar Goodwood Festival experience with one of our exclusive Hospitality areas.</p>
+            
+        
+        <div id = "pane">
+            <p>Select a day</p>
+                <form>
+
+                    <div class = "option" id = "tuesdaydiv" onclick = "radioFilter('tuesday')" selected>
+                        <input type="radio" id="tuesday" name="day" value="tuesday" onclick="radioFilter('tuesday')">
+                        <label for="tuesday">Tuesday</label>
+                    </div>
+        
+                    <div class = "option" id = "wednesdaydiv" onclick = "radioFilter('wednesday')">
+                        <input type="radio" id="wednesday" name="day" value="wednesday" onclick="radioFilter('wednesday')">
+                        <label for="wednesday">Wednesday</label>
+                    </div>
+        
+                    <div class = "option" id = "thursdaydiv" onclick = "radioFilter('thursday')">
+                        <input type="radio" id="thursday" name="day" value="thursday" onclick="radioFilter('thursday')">
+                        <label for="thursday">Thursday</label>
+                    </div>
+        
+                    <div class = "option" id = "fridaydiv" onclick = "radioFilter('friday')">
+                        <input type="radio" id="friday" name="day" value="friday" onclick="radioFilter('friday')">
+                        <label for="friday">Friday</label>
+                    </div>
+        
+                    <div class = "option" id = "saturdaydiv" onclick = "radioFilter('saturday')">
+                        <input type="radio" id="saturday" name="day" value="saturday" onclick="radioFilter('saturday')">
+                        <label for="saturday">Saturday</label>
+                    </div>
+        
+        
+                    <div class = "option" id = "alldiv" onclick = "radioFilter('all')">
+                        <input type="radio" id="all" name="day" value="all" onclick="radioFilter('all')">
+                        <label for="html">Show All</label>
+                    </div>
+    
+                </form>
+        </div>
+
+        <div id = "content">
+            <div id = "cells">
+                <div class = "cell">
+                    <img src = "https://www.goodwood.com/globalassets/horseracing/racecourse/enclosures/lennox-enclosure-group-picnic.jpg?crop=(0,220,2449,1598)&width=570">
+                    <h1 class="title">Lennox Enclosure</h1>
+                    <p class = "desc">Family-friendly and a great value way to enjoy the Qatar Goodwood Festival.</p>
+                    <button class ="book">Book Now</button>
+                </div>
+
+                <div class = "cell">
+                    <img src = "https://www.goodwood.com/globalassets/horseracing/2022/dress-code/group-of-ladies-at-qgf-goodwood-racecourse.jpg?crop=(171,205,2193,1343)">
+                    <h1 class="title">Gordon Enclosure</h1>
+                    <p class = "desc">The hub of race day entertainment with great views inside the Final Furlong.</p>
+                    <button class ="book">Book Now</button>
+                </div>
+
+                <div class = "cell">
+                    <img src = "https://www.goodwood.com/globalassets/horseracing/2022/hospitality-pages/group-smiling-and-having-fun-sussex-roof-garden.jpg?crop=(0,194,2449,1572)">
+                    <h1 class="title">Sussex Roof Garden Bar</h1>
+                    <p class = "desc">A botanical private bar in the Gordon Enclosure with commanding views.</p>
+                    <button class ="book">Book Now</button>
+                </div>
+
+                <div class = "cell">
+                    <img src = "https://www.goodwood.com/globalassets/horseracing/2022/hospitality-pages/secret-garden-table-with-food-qgf.jpg?crop=(0,94,2449,1472)">
+                    <h1 class="title">The Secret Garden</h1>
+                    <p class = "desc">A beautiful floral-filled space serving a delicious buffet-style menu.</p>
+                    <button class ="book">Book Now</button>
+                </div>
+
+                <div class = "cell">
+                    <img src = "https://www.goodwood.com/globalassets/horseracing/2022/hospitality-pages/final-furlong-balcony-qgf.jpg?crop=(0,254,2449,1632)">
+                    <h1 class="title">The Final Furlong</h1>
+                    <p class = "desc">A relaxing base for the day with thrilling course-side views.</p>
+                    <button class ="book">Book Now</button>
+                </div>
+
+                <div class = "cell">
+                    <img src = "https://www.goodwood.com/globalassets/horseracing/2022/hospitality-pages/charlton-hunt-ladies-on-balcony-horsewalk.jpg?crop=(0,127,2449,1505)">
+                    <h1 class="title">Charlton Hunt</h1>
+                    <p class = "desc">Entertaining space with far reaching views & serving fine cuisine.</p>
+                    <button class ="book">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
